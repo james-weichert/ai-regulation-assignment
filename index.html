@@ -41,28 +41,89 @@
 
             <h3>Description</h3>
 
+            <p>
+                The <em>AI Regulation Assignment</em> is an experimental 'hands-on' assignment designed for advanced undergraduate computing courses on 
+                artificial intelligence, machine learning, and/or the social impacts of computing (i.e. CS ethics courses). In this assignment, 
+                students are challenged to jailbreak and then align an open source large language model (LLM) relative to specific desired behavior.
+            </p>
+            <p>
+                In doing so, students should become aware of (some of) the limitations of current LLM safety mechanisms, and are encouraged to explore 
+                the difficult challenge of aligning AI models through a combination of fine-tuning, hard-coded filters, and policies to govern the use of AI.
+            </p>
+            <p>
+                The assignment has three learning objectives:
+            </p>
+            <ul>
+                <li><strong>Recognize</strong> limitations in the alignment of large language models, and <strong>describe</strong> how and why these limitations 
+                    can be used to produce undesired outputs.</li>
+                <li><strong>Apply</strong> understanding of AI alignment limitations to jailbreak and then subsequently align an open source LLM.</li>
+                <li><strong>Evaluate</strong> the success of technical alignment interventions, and <strong>consider</strong> the role of policy
+                and governance structures in the responsible development and deployment of AI.</li>
+            </ul>
+
+            <p>
+                The Python notebook provided in this submission is an extension of an earlier version of the <em>AI Regulation Assignment</em> with 
+                similar instructions, which was piloted with approximately 100 undergraduate and graduate students in a machine learning capstone 
+                course and a CS ethics course, respectively. The new form of the assignment we present here has two advantages: 1) we use an open source 
+                model as the jailbreaking/alignment target, mitigating concerns relating to terms of service breaches for jailbreaks attempted on commercial LLMs; 
+                and 2) using the open source LLM, students have full access to the model itself to experiment with alignment techniques. The <code>jailbreak_examples.html</code> 
+                file contains descriptions of some of the jailbreaking attacks explored by students in the original pilot of this assignment (i.e. without the Python notebook).
+            </p>
+
             <h3>Metadata</h3>
 
             <table>
                 <tr>
                     <td><h4>Summary</h4></td>
-                    <td>Test</td>
+                    <td>
+                        <p>
+                            In this Python notebook assignment, students are challenged to jailbreak and then align an open source large language model (LLM) relative to specific desired behavior. 
+                            The assignment scaffolding provides an example of jailbreak attacks using prompt engineering and LLM alignment using a system prompt and a hard-coded word filter. 
+                            Students are then tasked with exploring the robustness of a jailbreak attack and an  alignment approach of their choosing to different user prompts.
+                        </p>
+                    </td>
                 </tr>
                 <tr>
                     <td><h4>Topics</h4></td>
-                    <td></td>
+                    <td>
+                        <p>
+                            This is a largely conceptual and exploratory assignment, focusing on the topics of AI (specially, LLM) safety and alignment, prompt engineering, 
+                            and the regulation of AI through policy and governance.
+                        </p>
+                    </td>
                 </tr>
                 <tr>
                     <td><h4>Audience</h4></td>
-                    <td></td>
+                    <td>
+                        <p>
+                            The assignment assumes no prior (technical) knowledge of large language models and requires only introductory-level Python programming ability. 
+                            However, the subject of the assignment (i.e. LLM jailbreaking) has the potential to be misused by students, and should therefore be treated 
+                            with the same warnings as, for example, a buffer overflow exploitation assignment in a computer security course. As such, this assignment may 
+                            be best suited as an addition to an AI course with additional content on large language models (e.g. the transformer architecture, using <code>HuggingFace</code> models), 
+                            or a CS ethics course which discusses the social impacts and ethical challenges of current AI systems like ChatGPT.
+                        </p>
+                    </td>
                 </tr>
                 <tr>
                     <td><h4>Difficulty</h4></td>
-                    <td></td>
+                    <td>
+                        <p>
+                            We assumed no prior student knowledge of LLMs or LLM alignment in creating this assignment, as a key advantage of this work is its ability to adapt to different course settings. 
+                            However, jailbreaking exploits can prove fickle and are not always predictable/replicable. Additionally, the configuration of a HuggingFace account and API token, and the use of 
+                            a Google Colab GPU runtime may be unfamiliar to students and require additional debugging support.
+                        </p>
+                    </td>
                 </tr>
                 <tr>
                     <td><h4>Length</h4></td>
-                    <td></td>
+                    <td>
+                        <p>
+                            The length of this assignment is variable given a key component is the student's exploration of different jailbreaking and alignment approaches. On the lower end, the content of 
+                            the entire assignment could be covered/worked through in a single 1-hour lab period, during which the instructor guides students through using the existing code scaffolding while 
+                            giving students the opportunity to work in groups to test different prompting exploits. If given as homework, most students would likely only need to spend between 1 and 2 hours 
+                            on the assignment.
+                        </p>
+                    </td>
                 </tr>
                 <tr>
                     <td><h4>Strengths</h4></td>
