@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI Regulation Assignment Rubric</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <style>
+            html {
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            main {
+                width: 80vw;
+                margin-left: 10vw;
+                margin-top: 5vh;
+            }
+
+            h5 {
+                 font-weight: normal;
+                 font-size: 1.1em;
+            }
+
+            table {
+                border-collapse: collapse;
+                border-top: 0.1em solid #CCC;
+            }
+            tr {
+                border-bottom: 0.1em solid #CCC;
+            }
+            .left-col {
+                border-right: 0.1em solid #CCC;
+            }
+            td {
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+
+            <h1>AI Regulation Assignment</h1>
+            <h5>SIGCSE 2026 Nifty Assignment Submission</h5>
+
+            <h3>Learning Objectives</h3>
+
+            <ol>
+                <li><strong>Recognize</strong> limitations in the alignment of large language models, and <strong>describe</strong> how and why these limitations 
+                    can be used to produce undesired outputs.</li>
+                <li><strong>Apply</strong> understanding of AI alignment limitations to jailbreak and then subsequently align an open source LLM.</li>
+                <li><strong>Evaluate</strong> the success of technical alignment interventions, and <strong>consider</strong> the role of policy
+                and governance structures in the responsible development and deployment of AI.</li>
+            </ol>
+
+            <h3>Assignment Grading Rubric</h3>
+
+            <table>
+                <tr>
+                    <th class="left-col">Criteria</th>
+                    <th><em>Full Credit</em></th>
+                    <th><em>Partial Credit</em></th>
+                    <th><em>No Credit</em></th>
+                </tr>
+
+                <tr>
+                    <td class="left-col"><strong>Understanding LLM Limitations (LO1)</strong>
+                        <p>Descriptions of why and how LLM alignment mechanisms can be circumvented are provided.</p>
+                    </td>
+                    <td>
+                        Describes a key limitation of the LLM (e.g. inability to censor itself, sycophancy, etc.) and how this limitation enables a jailbreak.
+                    </td>
+                    <td>
+                        Identifies a limitation of the LLM, but does not sufficiently explain how this limitation enables a jailbreak.
+                    </td>
+                    <td>
+                        Does not explicitly identify a limitation of the LLM.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-col"><strong>Scope and Implementation (LO2)</strong>
+                        <p>Scope of jailbreak and alignment is appropriate, and implementation is well-documented.</p>
+                    </td>
+                    <td>
+                        Describes the steps taken to jailbreak and align the chosen model, elaborating on any challenges or successes encountered.
+                    </td>
+                    <td>
+                        Effort is made to jailbreak <em>or</em> align the model, but the process is not elaborated upon.
+                    </td>
+                    <td>
+                        Model jailbreak or alignment is not attempted.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-col"><strong>Writeup (LO3)</strong>
+                        <p>Difficulty and robustness of jailbreaking and alignment attempts are evaluated.</p>
+                    </td>
+                    <td>
+                        Discusses the robustness of the jailbreaking and alignment solutions, and describes the ease of implementing the solutions.
+                    </td>
+                    <td>
+                        Discusses the robustness of the jailbreaking and alignment solutions, <em>or</em> describes the ease of implementing the solutions, but not both.
+                    </td>
+                    <td>
+                        Neither robustness nor ease of implementation are discussed.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-col"><strong>Policy Considerations (LO3)</strong>
+                        <p>Demonstrated engagement with AI policy implications.</p>
+                    </td>
+                    <td>
+                        Proposes a policy to avoid the relevant harm and evaluates the feasibility of implementing this policy in code.
+                    </td>
+                    <td>
+                        A policy is proposed, but its feasibility is not evaluated.
+                    </td>
+                    <td>
+                        A policy is not proposed.
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Notes</h3>
+
+            <ul>
+                <li>The emphasis of this assignment is intentionally placed on the students' engagement with the broader social, ethical, and policy implications of
+                    AI alignment. As such, most rubric items are oriented to assess this engagement, and technical efficacy and robustness of students' jailbreaking and alignment
+                    attempts are de-emphasized. However, the rubric could be modified to more closely assess technical achievements in the context of, for example, 
+                    a natural language processing course where students should be proficient in using and adapting LLMs.
+                </li>
+                <li>The rubric currently combines the jailbreaking and alignment parts of the assignment, but these could be separated into separate parts of the rubric,
+                    each with their own "scope", "writeup", and "policy considerations" criteria.
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>

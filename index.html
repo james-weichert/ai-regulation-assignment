@@ -10,7 +10,7 @@
                 font-family: 'Open Sans', sans-serif;
             }
 
-            #main {
+            main {
                 width: 80vw;
                 margin-left: 10vw;
                 margin-top: 5vh;
@@ -32,7 +32,7 @@
     </head>
     <body>
 
-        <div id="main">
+        <main>
 
             <h1>AI Regulation Assignment</h1>
             <h5>SIGCSE 2026 Nifty Assignment Submission</h5>
@@ -66,9 +66,11 @@
                 similar instructions, which was piloted with approximately 100 undergraduate and graduate students in a machine learning capstone 
                 course and a CS ethics course, respectively. The new form of the assignment we present here has two advantages: 1) we use an open source 
                 model as the jailbreaking/alignment target, mitigating concerns relating to terms of service breaches for jailbreaks attempted on commercial LLMs; 
-                and 2) using the open source LLM, students have full access to the model itself to experiment with alignment techniques. The <code>jailbreak_examples.html</code> 
-                file contains descriptions of some of the jailbreaking attacks explored by students in the original pilot of this assignment (i.e. without the Python notebook).
+                and 2) using the open source LLM, students have full access to the model itself to experiment with alignment techniques. The <a href="jailbreak_examples.html"><code>jailbreak_examples.html</code></a>
+                file contains examples of the types of the jailbreaking attacks explored by students in the original pilot of this assignment (i.e. without the Python notebook).
             </p>
+
+            <p>We provide an example rubric for assessing student submissions in the <a href="./rubric.html"><code>rubric.html</code></a> file.</p>
 
             <h3>Metadata</h3>
 
@@ -131,16 +133,27 @@
                         We view the following as key strengths of this assignment:
 
                         <ul>
-                            <li>As a Google Colab notebook, the assignment (including use of the LLM API) is entirely self-contained, and can take advantage of </li>
+                            <li>As a Google Colab notebook, the assignment (including use of the LLM API) is entirely self-contained, and can take advantage of free GPU compute using the Google Colab T4 runtime.</li>
+                            <li>The low technical curve of this assignment is intentional, allowing students to focus more on understanding the extent of alignment mechanisms and to consider the wider social and ethical implications of deploying LLMs with critical alignment weaknesses. 
+                                This makes the assignment suitable for a variety of courses, including both technical AI/ML courses and courses on the social impacts of computing and AI.</li>
+                            <li>The open source model we use throughout the assignment provides two key advantages over a commercially available LLM. First, we are much less concerned about potential terms of service breaches when the assignment is used appropriately in an educational setting. 
+                                Second, the open source nature of the model could allow interested students to attempt more elaborate alignment interventions involving supervised fine-tuning (SFT), manual adjustments to the model architecture or parameters, or other white-box model features. This option is not explicitly mentioned in the current assignment, but the choice of model provides excellent optionality for future variants.</li> 
+                            <li>The purpose of this assignment is to bridge abstract discussions of 'responsible AI' with concrete technical interventions, enabling students to identify the challenges in applying normative policy preferences (e.g. the LLM should not use inappropriate language) to the training and deployment of AI systems. We see the <em>AI Regulation Assignment</em> as a successful first step in this direction.</li>
+                            <li>The assignment is an inherently creative one, and the learning experience of all students is likely augmented by the sharing of jailbreak and alignment ideas from students with diverse backgrounds and perspectives. Being confronted with new creative challenges (jailbreaking) and solutions (alignment), students should begin to understand the need for a more holistic and consultative approach to AI safety, which emphasizes the value of diverse perspectives in defining and implementing policies for the AI regulation.</li>
+
                         </ul>
                     </td>
                 </tr>
                 <tr>
                     <td><h4>Weaknesses</h4></td>
                     <td>
+                        We also acknowledge a few important limitations of the assignment in its current form, which we offer as opportunities for future improvement by ourselves or others in the CS education community:
 
                         <ul>
-                            <li>Randomness</li>
+                            <li>The topic of AI alignment and safety necessarily requires researcher (in this case, student) interaction with misaligned model responses that could be inappropriate, offensive, unethical, or which encourage or enable illegal activity. Nevertheless, we view it as an important part of the 'AI curriculum' for students to be confronted with these deficiencies, as they are largely inspired by examples from commercial AI models. 
+                                In view of the sensitive nature of some jailbreaks, we have included an important warning at the beginning of the assignment notebook, and encourage instructors to set appropriate expectations for student interactions with this assignment. Additionally, while we view the “get the model to swear” jailbreak as a relatively harmless yet realistic example, other instructors may decide to take another approach as a guiding example. We would encourage this adaptation, as we view the flexibility to different (course) contexts as a key strength of this project.</li>
+                            <li>The responses from the Mistral 7B LLM, like many large language models, are stochastic, and the authors are not aware of a mechanism for seeding randomness to ensure deterministic outputs. This presents the challenge that the intended model outputs around which we have designed some exercises or examples in this assignment may not appear when the corresponding code cell is actually run by a student or instructor. However, the stochasticity of LLM responses can be treated as a feature instead of bug, encouraging students to identify jailbreak and alignment techniques which work across a majority of possible responses.</li>
+                        
                         </ul>
                     </td>
                 </tr>
@@ -157,7 +170,7 @@
                 </tr>
             </table>
 
-        </div>
+        </main>
 
     </body>
 </html>
