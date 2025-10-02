@@ -118,8 +118,8 @@
                     <td>
                         <p>
                             We assumed no prior student knowledge of LLMs or LLM alignment in creating this assignment, as a key advantage of this work is its ability to adapt to different course settings. 
-                            However, jailbreaking exploits can prove fickle and are not always predictable/replicable. Additionally, the configuration of a HuggingFace account and API token, and the use of 
-                            a Google Colab GPU runtime may be unfamiliar to students and require additional debugging support.
+                            However, jailbreaking exploits can prove fickle and are not always predictable/replicable. Additionally, the configuration of a HuggingFace account and API token and the use of 
+                            a Google Colab GPU runtime may be unfamiliar to students, requiring additional debugging support.
                         </p>
                     </td>
                 </tr>
@@ -127,7 +127,7 @@
                     <td><h4>Length</h4></td>
                     <td>
                         <p>
-                            The length of this assignment is variable given a key component is the student's exploration of different jailbreaking and alignment approaches. On the lower end, the content of 
+                            The length of this assignment is variable given that a key component is the student's exploration of different jailbreaking and alignment approaches. On the lower end, the content of 
                             the entire assignment could be covered/worked through in a single 1-hour lab period, during which the instructor guides students through using the existing code scaffolding while 
                             giving students the opportunity to work in groups to test different prompting exploits. If given as homework, most students would likely only need to spend between 1 and 2 hours 
                             on the assignment.
@@ -142,10 +142,10 @@
                         <ul>
                             <li>As a Google Colab notebook, the assignment (including use of the LLM API) is entirely self-contained, and can take advantage of free GPU compute using the Google Colab T4 runtime.</li>
                             <li>The low technical curve of this assignment is intentional, allowing students to focus more on understanding the extent of alignment mechanisms and to consider the wider social and ethical implications of deploying LLMs with critical alignment weaknesses.</li> 
-                            <li>This makes the assignment suitable for a variety of courses, including both technical AI/ML courses and courses on the social impacts of computing and AI.</li>
+                            <li>The assignment is suitable for a variety of courses, including both technical AI/ML courses and courses on the social impacts of computing and AI.</li>
                             <li>The open source model we use throughout the assignment mitigates concerns relating to potential terms of service breaches, and allows for more elaborate alignment interventions involving supervised fine-tuning (SFT) or manual adjustments to the model architecture.</li> 
                             <li>The purpose of this assignment is to bridge abstract discussions of 'responsible AI' with concrete technical interventions, enabling students to identify the challenges in applying normative policy preferences (e.g. the LLM should not use inappropriate language) to the training and deployment of AI systems. We see the <em>AI Regulation Assignment</em> as a successful first step in this direction.</li>
-                            <li>The assignment is an inherently creative one, and the learning experience of all students is likely augmented by the sharing of jailbreak and alignment ideas from students with diverse backgrounds and perspectives. Being confronted with new creative challenges (jailbreaking) and solutions (alignment), students should begin to understand the need for a more holistic and consultative approach to AI safety, which emphasizes the value of diverse perspectives in defining and implementing policies for the AI regulation.</li>
+                            <li>The assignment is an inherently creative one, and the learning experience of all students is likely augmented by the sharing of jailbreak and alignment ideas from students with diverse backgrounds and perspectives. Being confronted with new creative challenges (jailbreaking) and solutions (alignment), students should begin to understand the need for a more holistic and consultative approach to AI safety, which emphasizes the value of diverse perspectives in defining and implementing policies for AI regulation.</li>
 
                         </ul>
                     </td>
@@ -175,7 +175,7 @@
                     <td><h4>Variants</h4></td>
                     <td>
                         <p><strong>Variant 1 (less complex)</strong></p>
-                        <p>The simplest (and original) variant of this assignment requires no Python notebook and involves students testing the limits of prompt engineering-based jailbreak on commercially-available large language models like ChatGPT or Grok. While this variant still provides a useful learning opportunity for students, we recommend against it in most cases given concerns about potential student breaches of terms of service for these commercial models. 
+                        <p>The simplest (and original) variant of this assignment requires no Python notebook and involves students testing the limits of prompt engineering-based jailbreaks on commercially-available large language models like ChatGPT or Grok. While this variant still provides a useful learning opportunity for students, we recommend against it in most cases given concerns about potential student breaches of terms of service for these commercial models. 
                             A key motivator for the creation of the Python notebook was to use an open source model that mitigates many of these concerns. Nonetheless, one option for time-constrained courses involves the instructor showcasing (and the class discussing) a few relatively harmless jailbreaks on a publicly available model (or using the Mistral 7B open source model) during lecture.</p>
                         
                         <p><strong>Variant 2 (more complex)</strong></p>
@@ -186,11 +186,8 @@
                 <tr>
                     <td><h4>Teaching Notes</h4></td>
                     <td>
-                        <p>We provide the following as suggestions for teaching with this assignment:</p>
-
-                        <ul>
-                            <li>In our view, the most effective introduction to the assignment is achieved by walking through the first parts of the Python notebook in class (lecture, section, or lab) to familiarize students with the aim of the assignment, guide students through getting access to the model, and provide an example of how to prompt the model through the provided <code>chat()</code> function. The remainder of the notebook can be assigned for students to complete outside of class as homework.</li>
-                        </ul>
+                        <p>In our view, the most effective introduction to this assignment is achieved by walking through the first parts of the Python notebook in class (lecture, section, or lab) to familiarize students with the aim of the assignment, guide students through getting access to the model, and provide an example of how to prompt the model through the provided <code>chat()</code> function. The remainder of the notebook can be assigned for students to complete outside of class as homework.</li>
+                        </p>
                     </td>
                 </tr>
             </table>
